@@ -6,14 +6,15 @@
   "scripts": {
     "config": "fun config",
     "local": "fun local",
+    "build": "webpack --config webpack.prod.ts",
     "deploy": "fun deploy",
-    "test": "fun validate && tsc --noEmit && jest",
+    "test": "npm run lint && npm run test:fun && npm run test:ts && npm run test:jest",
     "test:fun": "fun validate",
     "test:ts": "tsc --noEmit",
     "test:jest": "jest --passWithNoTests",
-    "build": "webpack --config webpack.prod.ts",
     "dev": "webpack --config webpack.dev.ts",
-    "dev:watch": "webpack -w --config webpack.dev.ts"
+    "dev:watch": "webpack -w --config webpack.dev.ts",
+    "lint": "eslint src --cache --ignore-pattern .gitignore"
   },
   "devDependencies": {
     "@alicloud/fun": "^2.16.4",
