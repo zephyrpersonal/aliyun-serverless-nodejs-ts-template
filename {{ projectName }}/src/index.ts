@@ -6,6 +6,6 @@ export const initializer = (ctx: AliyunHttpContext, callback: any) => {
   callback(null, '')
 }
 
-export const greeting = wrapper(async (ctx) => {
+export const {{ projectName }} = wrapper(async (ctx) => {
   ctx.body = 'helloworld'
 })
