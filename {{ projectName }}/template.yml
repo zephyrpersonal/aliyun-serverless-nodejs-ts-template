@@ -1,11 +1,11 @@
 ROSTemplateFormatVersion: '2015-09-01'
 Transform: 'Aliyun::Serverless-2018-04-03'
 Resources:
-  { { projectName } }:
+  {{ projectName }}:
     Type: 'Aliyun::Serverless::Service'
     Properties:
       Description: 'fc-http-trigger service'
-    { { projectName } }:
+    {{ projectName }}:
       Type: 'Aliyun::Serverless::Function'
       Properties:
         Initializer: index.initializer

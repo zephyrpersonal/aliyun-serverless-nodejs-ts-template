@@ -985,10 +985,10 @@ ali-oss@4:
     utility "^1.8.0"
     xml2js "^0.4.16"
 
-aliyun-serverless-wrapper@^1.0.10:
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/aliyun-serverless-wrapper/-/aliyun-serverless-wrapper-1.0.10.tgz#e6df78236a7043f39e397cff23854861b6a18b5c"
-  integrity sha512-Wbb8ZGMwhDGybKWYyyX1kLL9Z7VeNZV9FIaoJAVZMeCDufmEwVhcuCIo5PfeBw4wUI+Fa0doPsNbtAEj3XvN8A==
+aliyun-serverless-wrapper@2:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/aliyun-serverless-wrapper/-/aliyun-serverless-wrapper-2.0.0.tgz#675fa44ff1c2a9ec89c628dd7c41401e51325ce6"
+  integrity sha512-qLxqGIdRtvfJtoGuxXpUU41ohMxjHKqpkJXc+CbBjf/Co+ktK2Eo2KhImINA+aasXB6WssuL61NFWQB0vllWKg==
   dependencies:
     co-body "^6.0.0"
     mock-req "^0.2.0"

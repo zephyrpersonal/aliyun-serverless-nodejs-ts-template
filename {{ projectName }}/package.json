@@ -1,5 +1,5 @@
 {
-  "name": "pn",
+  "name": "{{ projectName }}",
   "version": "1.0.0",
   "author": "",
   "license": "MIT",
@@ -47,7 +47,7 @@
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
-    "aliyun-serverless-wrapper": "^1.0.10",
+    "aliyun-serverless-wrapper": "2",
     "reflect-metadata": "^0.1.13"
   }
 }
