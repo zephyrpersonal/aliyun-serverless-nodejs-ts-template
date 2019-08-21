@@ -4,7 +4,7 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "config": "fun config",
+    "fun:config": "fun config",
     "local": "fun local",
     "build": "webpack --config webpack.prod.ts",
     "deploy": "fun deploy",
@@ -14,7 +14,7 @@
     "test:jest": "jest --passWithNoTests",
     "dev": "webpack --config webpack.dev.ts",
     "dev:watch": "webpack -w --config webpack.dev.ts",
-    "lint": "eslint src --cache --ignore-pattern .gitignore"
+    "lint": "eslint src/** --cache --ignore-pattern .gitignore"
   },
   "devDependencies": {
     "@alicloud/fun": "^2.16.4",
