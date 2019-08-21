@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "declaration": false,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "lib": ["esnext", "dom", "es6", "es5", "es2016"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "outDir": "dist/",
+    "preserveConstEnums": true,
+    "removeComments": false,
+    "sourceMap": false,
+    "strictNullChecks": true,
+    "target": "es2016",
+    "traceResolution": false,
+    "types": ["node", "jest"]
+  },
+  "include": ["./src", "__test__/index.test.ts"],
+  "exclude": ["node_modules"]
+}

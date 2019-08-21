@@ -1,0 +1,53 @@
+{
+  "name": "pn",
+  "version": "1.0.0",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "config": "fun config",
+    "local": "fun local",
+    "deploy": "fun deploy",
+    "test": "fun validate && tsc --noEmit && jest",
+    "test:fun": "fun validate",
+    "test:ts": "tsc --noEmit",
+    "test:jest": "jest --passWithNoTests",
+    "build": "webpack --config webpack.prod.ts",
+    "dev": "webpack --config webpack.dev.ts",
+    "dev:watch": "webpack -w --config webpack.dev.ts"
+  },
+  "devDependencies": {
+    "@alicloud/fun": "^2.16.4",
+    "@types/graphql": "^14.2.3",
+    "@types/jest": "^24.0.9",
+    "@types/lodash": "^4.14.137",
+    "@types/node": "^11.10.4",
+    "@types/webpack": "4.4.27",
+    "@types/webpack-merge": "4.1.5",
+    "@types/webpack-node-externals": "^1.6.3",
+    "@typescript-eslint/parser": "^1.4.2",
+    "ali-oss": "4",
+    "concurrently": "^4.1.0",
+    "eslint": "^5.12.0",
+    "eslint-config-node": "^4.0.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "jest": "^24.1.0",
+    "tablestore": "4.0.11",
+    "ts-jest": "^24.0.0",
+    "ts-loader": "^5.3.3",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.3.3333",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.2.3",
+    "webpack-merge": "^4.2.1",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "aliyun-serverless-wrapper": "^1.0.10",
+    "reflect-metadata": "^0.1.13"
+  }
+}

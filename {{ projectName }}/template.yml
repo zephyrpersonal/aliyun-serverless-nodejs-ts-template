@@ -1,0 +1,20 @@
+ROSTemplateFormatVersion: '2015-09-01'
+Transform: 'Aliyun::Serverless-2018-04-03'
+Resources:
+  { { projectName } }:
+    Type: 'Aliyun::Serverless::Service'
+    Properties:
+      Description: 'fc-http-trigger service'
+    { { projectName } }:
+      Type: 'Aliyun::Serverless::Function'
+      Properties:
+        Initializer: index.initializer
+        Handler: index.{{ projectName }}
+        Runtime: nodejs8
+        CodeUri: './dist'
+      Events:
+        http-trigger-{{ projectName }}:
+          Type: HTTP
+          Properties:
+            AuthType: ANONYMOUS
+            Methods: ['GET']
