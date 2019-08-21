@@ -13,7 +13,7 @@ const config: webpack.Configuration = {
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
+        test: /\.ts$/,
         use: 'ts-loader',
         exclude: /node_modules/
       },
@@ -24,9 +24,7 @@ const config: webpack.Configuration = {
       }
     ]
   },
-  externals: {
-    
-  },
+  externals: {},
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '.gql', '.json', '.graphql'],
     mainFields: ['main']

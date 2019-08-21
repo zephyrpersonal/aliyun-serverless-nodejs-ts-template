@@ -20,6 +20,6 @@
     "traceResolution": false,
     "types": ["node", "jest"]
   },
-  "include": ["./src", "__test__/index.test.ts"],
+  "include": ["./src", "./__test__"],
   "exclude": ["node_modules"]
 }
